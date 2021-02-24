@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1050px) and (min-width: 640px" href="./tab.css">
+    <link rel="stylesheet" media="screen and (max-width: 639px" href="./phone.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>HaalChal</title>
+</head>
+
+<body>
+    <nav>
+        <img src="image/chatLogo.png" alt="HomeLogo" class="logo">
+    </nav>
+    <div class="container-box">
+        <div class="space"></div>
+
+        <div class="container">
+            <div class="message right"></div>
+            <div class="message left"></div>
+        </div>
+
+        <div class="send">
+            <form action="#" class="send-content">
+                <textarea name="messageInp" id="messageInp" cols="70" rows="1" placeholder="Write a message"></textarea>
+            </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./client.js"></script>
+</body>
+
+</html>

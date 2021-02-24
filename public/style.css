@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, white, #ffa5009e);
+}
+
+/* Navigation */
+.logo{
+    margin: auto;
+    display: block;
+    height: 82px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Box-Container  */
+.container-box{
+    background: url("image/bg1.jpg") no-repeat center center/cover;
+    max-width: 1000px;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    border: 5px solid orange;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.container{
+    /* background-color: red; */
+    height: 91%;
+    overflow-y: scroll;
+}
+.space{
+    height: 11px;
+}
+.message{
+    background-color: #ffaa5296;
+    padding: 15px;
+    margin: 9px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    max-width: 40%;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.message p{
+    font-size: 27px;
+}
+.message h4{
+    font-weight: bold;
+    font-size: 25px;
+}
+.send{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 10px;
+}
+.send form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    opacity: 0.7;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 70px;
+}
+
+textarea{
+    border: none;
+    outline: none;
+    padding: 14px 0px;
+    font-size: 26px;
+    border-radius: 30px;
+    font-weight: bold;
+    padding-left: 31px;
+    font-family: 'Roboto', sans-serif;
+}
