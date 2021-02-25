@@ -66,7 +66,7 @@ function appendNewUser(newName){
     messageDiv.classList.add('left', 'message')
 
     let markup = `
-        <h4>${newName} joined the chat server.</h4>
+        <p><strong>${newName}</strong> joined the chat server.</p>
     `
     messageDiv.innerHTML = markup
     messageContainer.appendChild(messageDiv)
