@@ -93,7 +93,7 @@ textarea{
 footer{
     margin: 2rem 0rem;
     /* height: 10rem; */
-    background-color: grey;
+    /* background-color: grey; */
     color: wheat;
     height: 50px;
 }
@@ -108,9 +108,10 @@ footer{
 }
 .rightHolder p{
     font-size: 1.3rem;
+    color: black;
 }
 .rightHolder p a{
     font-size: 1.3rem;
     text-decoration: none;
-    color: white;
+    color: black;
 }
