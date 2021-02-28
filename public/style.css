@@ -89,3 +89,28 @@ textarea{
     padding-left: 31px;
     font-family: 'Roboto', sans-serif;
 }
+
+footer{
+    margin: 2rem 0rem;
+    /* height: 10rem; */
+    background-color: grey;
+    color: wheat;
+    height: 50px;
+}
+
+.rightHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0rem;
+    
+}
+.rightHolder p{
+    font-size: 1.3rem;
+}
+.rightHolder p a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
