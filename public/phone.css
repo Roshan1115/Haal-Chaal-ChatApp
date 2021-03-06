@@ -4,9 +4,19 @@
 body{
     height: 100vh;
 }
+
+.usernotification{
+    border: 2px solid orange;
+    border-radius: 1rem;
+}
+.usernotification p{
+    font-size: 11px;
+    padding: 0rem;
+}
 .container-box{
     height: 90vh;
     border: 2px solid orange;
+    border-radius: 12px;
 }
 textarea{
     padding: 9px 0px;
@@ -16,14 +26,15 @@ textarea{
     height: 50px;
 }
 .message{
-    padding: 11px;
+    padding: 0px 5px;
+    border-radius: 8px;
     margin: 8px 14px
 }
 .message h4{
-    font-size: 20px;
+    font-size: 13px;
 }
 .message p{
-    font-size: 16px;
+    font-size: 11px;
 }
 .rightHolder{
     margin: 4rem 0rem;

@@ -35,12 +35,27 @@ body{
     height: 91%;
     overflow-y: scroll;
 }
+.usernotification{
+    background-color: rgb(224, 223, 223);
+    width: 55%;
+    margin: auto;
+    border-radius: 1.5rem;
+    border: 3px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.usernotification p{
+    padding: .2rem 0;
+    font-size: 27px;
+}
+
 .space{
     height: 11px;
 }
 .message{
     background-color: #ffaa5296;
-    padding: 15px;
+    padding: 4px 11px;
     margin: 9px 20px;
     border: 2px solid black;
     border-radius: 15px;

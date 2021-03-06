@@ -63,10 +63,12 @@ function scrollToBottom(){
 function appendNewUser(newName){
     let messageDiv = document.createElement('div')
     // let className = type
-    messageDiv.classList.add('left', 'message')
+    messageDiv.classList.add('usernotification')
 
     let markup = `
+        <center>
         <p><strong>${newName}</strong> joined the chat server.</p>
+        </center>
     `
     messageDiv.innerHTML = markup
     messageContainer.appendChild(messageDiv)
@@ -76,3 +78,29 @@ function appendNewUser(newName){
 socket.on('newUser-joined', newName =>{
     appendNewUser(newName)
 })
+
+//users online
+socket.on('totalusers', (Ourdata) =>{
+    // document.body.innerHTML = Ourdata
+    appendUserOnlineData(Ourdata)
+})
+
+function appendUserOnlineData(Onlinedata){
+    let messageDiv = document.createElement('div')
+    // let className = type
+    messageDiv.classList.add('usernotification')
+
+    let markup = `
+        <center>
+        <p>${Onlinedata}.</p>
+        </center>
+    `
+    messageDiv.innerHTML = markup
+    messageContainer.appendChild(messageDiv)
+
+}
+
+//user disconnection
+// socket.on('userleft', (leftname) => {
+//     document.body.innerHTML = leftname
+// })
